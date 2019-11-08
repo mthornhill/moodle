@@ -145,7 +145,7 @@ if (($launchcontainer == LTI_LAUNCH_CONTAINER_WINDOW) &&
     }
 
     // Request the launch content with an iframe tag.
-    echo '<iframe id="contentframe" height="600px" width="100%" src="launch.php?id=' . $cm->id .
+    echo '<iframe allow="geolocation *; microphone *; camera *" id="contentframe" height="600px" width="100%" src="launch.php?id=' . $cm->id .
          "&triggerview=0\" webkitallowfullscreen mozallowfullscreen allowfullscreen>{$content}</iframe>";
 
     // Output script to make the iframe tag be as large as possible.
